@@ -1,0 +1,251 @@
+/* Global Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('./pexels-souvenirpixels-1519088.jpg'); /* Make sure the path is correct */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Main App Container */
+.App {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly increase opacity for better readability */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings */
+h1 {
+  font-size: 2.2em;
+  color: #003d73;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #023e8a;
+  margin-bottom: 15px;
+}
+
+/* RideForm Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: rgba(224, 247, 250, 0.9);
+  border-radius: 8px;
+  border: 1px solid #b2ebf2;
+}
+
+label {
+  font-weight: bold;
+  color: #00796b;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="datetime-local"] {
+  padding: 10px;
+  border: 1px solid #b2ebf2;
+  border-radius: 4px;
+  outline: none;
+  font-size: 1em;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #00796b;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #004d40;
+  transform: scale(1.05);
+}
+
+/* RideList Styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #e3f2fd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* List Item Text */
+li strong {
+  color: #1a73e8;
+}
+
+/* Button Styling */
+button {
+  padding: 8px 12px;
+  font-size: 0.9em;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 120px;
+  margin-top: 5px;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/* Custom Button Colors */
+button.book {
+  background-color: #4caf50;
+}
+
+button.cancel {
+  background-color: #f44336;
+}
+
+button.ticket {
+  background-color: #ff9800;
+}
+
+button.receipt {
+  background-color: #fdb818; /* Yellow color for the receipt button */
+}
+
+/* Ticket Styling */
+.ticket {
+  background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent for contrast with background */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.ticket h2 {
+  font-size: 1.5em;
+  color: #005f73;
+  margin-bottom: 15px;
+}
+
+.ticket p {
+  font-size: 1em;
+  margin: 8px 0;
+  color: #333;
+}
+
+/* Ticket Buttons */
+.ticket button {
+  padding: 15px 20px;
+  margin: 5px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.ticket button.close {
+  background-color: #00796b;
+  color: #ffffff;
+}
+
+.ticket button.cancel {
+  background-color: #f44336;
+  color: #ffffff;
+}
+
+.ticket button:hover {
+  transform: scale(1.05);
+}
+
+.ticket button.close:hover {
+  background-color: #004d40;
+}
+
+.ticket button.cancel:hover {
+  background-color: #d32f2f;
+}
+
+/* Receipt Styling (Similar to Ticket but with Yellow color) */
+.receipt {
+  background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent for contrast with background */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.receipt h2 {
+  font-size: 1.5em;
+  color: #d32f2f; /* Red color for receipt title */
+  margin-bottom: 15px;
+}
+
+.receipt p {
+  font-size: 1em;
+  margin: 8px 0;
+  color: #333;
+}
+
+.receipt button {
+  padding: 15px 20px;
+  margin: 5px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  flex-wrap:nowrap;
+}
+
+.receipt button.close {
+  background-color: #00796b;
+  color: #ffffff;
+}
+
+.receipt button.cancel {
+  background-color: #f44336;
+  color: #ffffff;
+}
+
+.receipt button:hover {
+  transform: scale(1.05);
+}
+
+.receipt button.close:hover {
+  background-color: #004d40;
+}
+
+.receipt button.cancel:hover {
+  background-color: #d32f2f;
+}
