@@ -112,6 +112,8 @@ button {
   transition: background-color 0.3s, transform 0.2s;
   width: 120px;
   margin-top: 5px;
+  text-align: center;
+  white-space: nowrap; /* Prevent text from wrapping */
 }
 
 button:hover {
@@ -121,131 +123,51 @@ button:hover {
 
 /* Custom Button Colors */
 button.book {
-  background-color: #4caf50;
+  background-color: #4caf50; /* Green for Book Ride */
 }
 
 button.cancel {
-  background-color: #f44336;
+  background-color: #f44336; /* Red for Cancel Ride */
 }
 
 button.ticket {
-  background-color: #ff9800;
+  background-color: #ff9800; /* Orange for Ticket Button */
 }
 
 button.receipt {
-  background-color: #fdb818; /* Yellow color for the receipt button */
+  background-color: #fdb818; /* Yellow for Receipt Button */
 }
 
-/* Ticket Styling */
-.ticket {
-  background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent for contrast with background */
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  margin: 20px auto;
-  text-align: center;
+/* Button Container Styling for Aligning Book Ride and Delete Ride */
+.button-container {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  justify-content: flex-start; /* Align to the left */
 }
 
-.ticket h2 {
-  font-size: 1.5em;
-  color: #005f73;
-  margin-bottom: 15px;
-}
-
-.ticket p {
-  font-size: 1em;
-  margin: 8px 0;
-  color: #333;
-}
-
-/* Ticket Buttons */
-.ticket button {
-  padding: 15px 20px;
-  margin: 5px;
-  font-weight: bold;
+/* Button Styling for Book Ride and Delete Ride */
+button.book, button.delete {
+  padding: 10px 20px; /* Consistent padding */
+  font-size: 0.9em; /* Consistent font size */
+  color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
+  width: 150px; /* Consistent width */
+  text-align: center; /* Center text */
+  white-space: nowrap; /* Prevent text from wrapping */
 }
 
-.ticket button.close {
-  background-color: #00796b;
-  color: #ffffff;
+button.book {
+  background-color: #4caf50; /* Green for Book Ride */
 }
 
-.ticket button.cancel {
-  background-color: #f44336;
-  color: #ffffff;
+button.delete {
+  background-color: red; /* Red for Delete Ride */
 }
 
-.ticket button:hover {
-  transform: scale(1.05);
-}
-
-.ticket button.close:hover {
-  background-color: #004d40;
-}
-
-.ticket button.cancel:hover {
-  background-color: #d32f2f;
-}
-
-/* Receipt Styling (Similar to Ticket but with Yellow color) */
-.receipt {
-  background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent for contrast with background */
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  margin: 20px auto;
-  text-align: center;
-}
-
-.receipt h2 {
-  font-size: 1.5em;
-  color: #d32f2f; /* Red color for receipt title */
-  margin-bottom: 15px;
-}
-
-.receipt p {
-  font-size: 1em;
-  margin: 8px 0;
-  color: #333;
-}
-
-.receipt button {
-  padding: 15px 20px;
-  margin: 5px;
-  font-weight: bold;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-  flex-wrap:nowrap;
-}
-
-.receipt button.close {
-  background-color: #00796b;
-  color: #ffffff;
-}
-
-.receipt button.cancel {
-  background-color: #f44336;
-  color: #ffffff;
-}
-
-.receipt button:hover {
-  transform: scale(1.05);
-}
-
-.receipt button.close:hover {
-  background-color: #004d40;
-}
-
-.receipt button.cancel:hover {
-  background-color: #d32f2f;
+button.book:hover, button.delete:hover {
+  opacity: 0.9;
+  transform: scale(1.05); /* Slight scaling effect */
 }

@@ -12,7 +12,7 @@ const PaymentReceipt = () => {
 
   // Define additional charges
   const taxRate = 0.18; // 18% tax
-  const convenienceFeeRate = 0.05; // 5% convenience fee
+  const convenienceFeeRate = 0.05; // 5% convenience fe
 
   const taxAmount = price * taxRate;
   const convenienceFee = price * convenienceFeeRate;
